@@ -1,10 +1,7 @@
-
 <html>
 
   
 <head>
-    <link rel="stylesheet" href="style.css" />
-    <script src="config'.js"></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -118,7 +115,7 @@ a {
 a:hover {
   border-color: transparent;
 }
-    
+
 /* Icon */
 .icon {
   text-decoration: none;
@@ -1136,6 +1133,7 @@ model-viewer {
     <a class="github-button" href="https://github.com/xyanglu/xyanglu.github.io" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark;" data-icon="octicon-star" data-show-count="true" aria-label="Star buttons/github-buttons on GitHub">Star</a>
     <a class="github-button" href="https://github.com/xyanglu/xyanglu.github.io/fork" data-icon="octicon-repo-forked" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark;" aria-label="Fork buttons/github-buttons on GitHub">Fork</a>
             <iframe class="chat-bot" allow="camera;microphone"></iframe>
+  <button id="myButton" class="fa fa-plus my-float float"></button>
 
   </div>
 </div>
@@ -1162,7 +1160,17 @@ model-viewer {
   <script>
         document.addEventListener("DOMContentLoaded", function() {
             var iframe = document.querySelector(".chat-bot");
+    var button = document.querySelector('.fa-plus.my-float');
             var baseUrl = "https://www.agentize.ai/agents/";
             iframe.src = baseUrl + agentId + "?headerless";
+          
+  button.addEventListener("click", function() {
+    // Toggle the visibility of the element
+    if (iframe.style.display === "none") {
+      iframe.style.display = "block";
+    } else {
+      iframe.style.display = "none";
+    }
+  });
         });
     </script>
