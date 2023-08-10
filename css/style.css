@@ -8,3 +8,28 @@
     z-index: 9999; /* Set a high z-index to bring it to the front */
     background-color: rgba(0, 0, 0, 0.5); /* Optionally add a semi-transparent background */
 }
+
+*{padding:0;margin:0;}
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	background-color:#CCC;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
