@@ -1,0 +1,18 @@
+<html>
+<head>
+    <script src="config.js"></script>
+</head>
+<body>
+    <div>
+        <iframe class="chat-bot" allow="camera;microphone"></iframe>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var iframe = document.querySelector(".chat-bot");
+            var baseUrl = "https://www.agentize.ai/agents/";
+            iframe.src = baseUrl + agentId + "?headerless";
+        });
+    </script>
+</body>
+</html>
