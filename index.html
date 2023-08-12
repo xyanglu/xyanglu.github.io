@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <script src="/js/script.js"></script>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <style>
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:300,900&family=Open+Sans&family=Roboto&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
@@ -1117,16 +1116,6 @@ model-viewer {
   <div id="wrapper">
     <div id="bg"></div>
     <div id="overlay"></div>
-    <div id="main">
-
-      <!-- Header -->
-      <header id="header">
-        <div style="position: center; text-align: center; left: 50%; transform: translateX(-50%);">
-          <model-viewer camera-controls touch-action="pan-y" src="https://tommykho.github.io/assets/models/Dragon_Statue.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1.29" exposure="0.4" shadow-softness="0.85" style="background-color: unset;" auto-rotate></model-viewer>
-        </div>
-      </header>
-
-    </div>
   </div>
   <div class="github">
   <div>
@@ -1134,9 +1123,9 @@ model-viewer {
     <a class="github-button" href="https://github.com/xyanglu/xyanglu.github.io" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark;" data-icon="octicon-star" data-show-count="true" aria-label="Star buttons/github-buttons on GitHub">Star</a>
     <a class="github-button" href="https://github.com/xyanglu/xyanglu.github.io/fork" data-icon="octicon-repo-forked" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark;" aria-label="Fork buttons/github-buttons on GitHub">Fork</a>
   <button id="myButton" class="fa fa-plus my-float float"></button>
-
-  </div>
                 <iframe class="chat-bot" allow="camera;microphone"></iframe>
+  </div>
+        </div>
 </div>
   
   <head>
@@ -1144,7 +1133,7 @@ model-viewer {
     
 </head>
   
- 
+    <div style="position: center; text-align: center; left: 50%; transform: translateX(-50%);">
   
 <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
   <script href="assets/js/main.js"></script>
@@ -1176,3 +1165,6 @@ model-viewer {
   });
         });
     </script>
+              <div style="position: absolute; text-align: center; left: 100%; transform: translateX(-50%);">
+          <model-viewer camera-controls touch-action="pan-y" src="https://tommykho.github.io/assets/models/Dragon_Statue.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1.29" exposure="0.4" shadow-softness="0.85" style="background-color: unset;" auto-rotate></model-viewer>
+        </div>
