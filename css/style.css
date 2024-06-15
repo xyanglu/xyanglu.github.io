@@ -1,5 +1,5 @@
 .chat-bot {
-    position: top; /* Position the iframe relative to the viewport */
+    position: bottom-right; /* Position the iframe relative to the viewport */
     top: 0; /* Place it at the top */
     left: 0; /* Place it at the left */
     width: 100%; /* Make it full width */
