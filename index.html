@@ -6,103 +6,93 @@
 <title>Yang Lu — AI Engineer</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#0a0a0a;color:#e5e5e5;line-height:1.6}
-  a{color:#60a5fa;text-decoration:none;transition:color .2s}
-  a:hover{color:#93c5fd}
-  .container{max-width:720px;margin:0 auto;padding:60px 24px}
-  h1{font-size:2.5rem;font-weight:700;margin-bottom:8px;color:#fff}
-  h2{font-size:1.25rem;font-weight:600;margin:48px 0 20px;color:#fff;border-bottom:1px solid #262626;padding-bottom:8px}
-  h3{font-size:1.1rem;font-weight:600;color:#fff;margin-bottom:4px}
-  .tagline{font-size:1.1rem;color:#9ca3af;margin-bottom:32px}
-  .links{display:flex;gap:20px;margin-bottom:48px;flex-wrap:wrap}
-  .links a{color:#9ca3af;font-size:.95rem;transition:color .2s}
-  .links a:hover{color:#60a5fa}
-  .project{margin-bottom:32px;padding:20px;background:#111;border:1px solid #1e1e1e;border-radius:8px}
-  .project h3{display:flex;align-items:center;gap:8px}
-  .project h3 a{font-size:.85rem;color:#60a5fa}
-  .desc{color:#9ca3af;font-size:.95rem;margin:8px 0 12px}
-  .tech{display:flex;gap:8px;flex-wrap:wrap}
-  .tech span{font-size:.8rem;padding:3px 10px;background:#1a1a2e;color:#60a5fa;border-radius:12px;border:1px solid #1e3a5f}
-  .exp{margin-bottom:24px}
-  .exp-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
-  .exp-company{color:#60a5fa;font-weight:600}
-  .exp-date{color:#6b7280;font-size:.9rem}
-  .exp-title{color:#e5e5e5;font-weight:500;margin:2px 0 4px}
-  .exp-desc{color:#9ca3af;font-size:.95rem}
-  .skills-grid{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-  .skills-grid span{font-size:.85rem;padding:4px 12px;background:#1a1a1a;border:1px solid #262626;border-radius:4px;color:#d1d5db}
-  footer{margin-top:64px;padding-top:24px;border-top:1px solid #1e1e1e;color:#6b7280;font-size:.85rem;text-align:center}
+  body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0b0f17;color:#e5e7eb;line-height:1.65}
+  a{color:#7dd3fc;text-decoration:none} a:hover{color:#bae6fd}
+  .container{max-width:860px;margin:0 auto;padding:56px 22px 44px}
+  .hero{margin-bottom:42px}
+  h1{font-size:2.6rem;line-height:1.1;color:#fff;margin-bottom:10px}
+  .tagline{font-size:1.12rem;color:#a5b4fc;margin-bottom:16px}
+  .summary{max-width:760px;color:#cbd5e1;font-size:1rem}
+  .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+  .links a,.button{border:1px solid #243244;background:#111827;border-radius:999px;padding:8px 14px;color:#dbeafe;font-size:.92rem}
+  h2{font-size:1.25rem;margin:42px 0 18px;color:#fff;border-bottom:1px solid #1f2937;padding-bottom:8px}
+  .grid{display:grid;gap:18px}
+  .card{background:#101826;border:1px solid #1f2937;border-radius:14px;padding:20px}
+  .card h3{font-size:1.12rem;color:#fff;margin-bottom:6px}
+  .meta{color:#93c5fd;font-size:.9rem;margin-bottom:8px}
+  .desc{color:#cbd5e1;font-size:.96rem;margin-bottom:12px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .chips span{font-size:.78rem;padding:3px 9px;border-radius:999px;border:1px solid #1e3a5f;background:#0f172a;color:#93c5fd}
+  .card-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-size:.92rem}
+  ul{margin-left:18px;color:#cbd5e1}.note{color:#94a3b8;font-size:.92rem;margin-top:8px}
+  footer{margin-top:50px;padding-top:22px;border-top:1px solid #1f2937;color:#64748b;font-size:.9rem}
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>Yang Lu</h1>
-  <p class="tagline">AI Engineer — LLMs, RAG Systems, Agentic Workflows</p>
-  <div class="links">
-    <a href="https://github.com/xyanglu" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/xyanglu" target="_blank">LinkedIn</a>
-    <a href="https://docs.google.com/document/d/1y8qge7gB9otoVnTxj88ZPyYRaVfxsyFNBWF3tITcaPk" target="_blank">Resume</a>
-  </div>
-
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>Resume Agent <a href="https://github.com/xyanglu/resume-agent" target="_blank">→ source</a></h3>
-    <p class="desc">RAG-powered resume tailoring agent using LangChain, LangGraph, and Chroma vector search. Matches candidate profiles to job descriptions with context-aware suggestions and multi-step orchestration.</p>
-    <div class="tech">
-      <span>Python</span><span>LangChain</span><span>LangGraph</span><span>Chroma</span><span>Claude API</span><span>Streamlit</span>
+  <section class="hero">
+    <h1>Yang Lu</h1>
+    <p class="tagline">AI Engineer — RAG, multi-agent workflows, MCP, and LLM evaluation</p>
+    <p class="summary">I build practical LLM systems with a software engineering foundation: retrieval-grounded applications, agent workflows, evaluation tooling, and reliability improvements for AI agent infrastructure. 7 years of software development experience across backend, full-stack, and applied AI engineering.</p>
+    <div class="links">
+      <a href="https://github.com/xyanglu" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/-yang-lu" target="_blank">LinkedIn</a>
+      <a href="https://huggingface.co/xyanglu" target="_blank">Hugging Face</a>
+      <a href="mailto:yang.lu.queens@gmail.com">yang.lu.queens@gmail.com</a>
     </div>
+  </section>
+
+  <h2>Featured projects</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>RAG Resume Agent</h3>
+      <p class="meta">Deployed resume Q&A agent</p>
+      <p class="desc">A Streamlit app that answers recruiter-facing questions from structured resume data. It uses retrieval over a resume.json source of truth, Chroma vector search, role context, and LLM responses grounded in retrieved resume content.</p>
+      <div class="card-links">
+        <a href="https://huggingface.co/spaces/xyanglu/resume-agent-chatbot" target="_blank">Live demo</a>
+        <a href="https://github.com/xyanglu/resume-agent" target="_blank">Source</a>
+      </div>
+      <div class="chips"><span>Python</span><span>Streamlit</span><span>LangChain</span><span>LangGraph patterns</span><span>Chroma</span><span>Hugging Face Spaces</span></div>
+    </article>
+
+    <article class="card">
+      <h3>LLM Eval Toolkit</h3>
+      <p class="meta">Multi-model evaluation tooling</p>
+      <p class="desc">Open-source toolkit for comparing LLM outputs with LLM-as-judge relevance assessment and latency metrics across model providers.</p>
+      <div class="card-links"><a href="https://github.com/xyanglu/llm-eval-toolkit" target="_blank">Source</a></div>
+      <div class="chips"><span>Python</span><span>httpx</span><span>asyncio</span><span>OpenRouter API</span><span>LLM evaluation</span></div>
+    </article>
+
+    <article class="card">
+      <h3>Hermes Agent open-source work</h3>
+      <p class="meta">Public PRs to NousResearch/hermes-agent</p>
+      <p class="desc">Submitted PRs focused on AI agent reliability and messaging workflows: Signal attachment handling, long-message reassembly, gateway replay, rate-limit queues, context-compression transcript preservation, and CJK search behavior.</p>
+      <div class="card-links"><a href="https://github.com/NousResearch/hermes-agent/pulls?q=is%3Apr+author%3Axyanglu" target="_blank">View PRs</a></div>
+      <p class="note">Framed as submitted public PRs; merge status is visible on GitHub.</p>
+      <div class="chips"><span>Python</span><span>Agent infrastructure</span><span>Signal</span><span>Gateway reliability</span><span>Search</span></div>
+    </article>
   </div>
 
-  <div class="project">
-    <h3>GERD Tracker <a href="https://github.com/xyanglu/gerd-tracker" target="_blank">→ source</a></h3>
-    <p class="desc">React Native/Expo mobile app for acid reflux tracking with AI-driven health insights via Claude API. SQLite local storage, push notification reminders, published on GitHub.</p>
-    <div class="tech">
-      <span>React Native</span><span>Expo 54</span><span>SQLite</span><span>Claude API</span><span>TypeScript</span>
-    </div>
+  <h2>Experience snapshot</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Independent AI Engineer — Open Source & R&D</h3>
+      <p class="meta">AI Integration Solutions · 2024 – Present</p>
+      <p class="desc">Building RAG systems, LLM evaluation tooling, and AI-agent infrastructure projects with public artifacts.</p>
+    </article>
+    <article class="card">
+      <h3>Back-End Developer</h3>
+      <p class="meta">Alaia Technologies · 2016 – 2020</p>
+      <p class="desc">Built multithreaded Java batch pipelines processing 150K real estate listings per day via cron into Elasticsearch with automated cleanup.</p>
+    </article>
   </div>
 
-  <div class="project">
-    <h3>TGTG Scanner + Auto-Buy</h3>
-    <p class="desc">Automated TooGoodToGo scanner with auto-reserve capability. Monitors availability, sends Discord alerts with @mention pings, and reserves surprise bags when they become available.</p>
-    <div class="tech">
-      <span>Python</span><span>Discord API</span><span>REST APIs</span><span>Automation</span>
-    </div>
+  <h2>Core stack</h2>
+  <div class="chips">
+    <span>Python</span><span>TypeScript</span><span>Java</span><span>FastAPI</span><span>React</span><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>MCP</span><span>Chroma</span><span>OpenRouter</span><span>Z.AI</span><span>Docker</span><span>GitHub Actions</span><span>Elasticsearch</span><span>PostgreSQL</span>
   </div>
 
-  <h2>Experience</h2>
-
-  <div class="exp">
-    <div class="exp-header">
-      <span class="exp-company">AI/ML Consulting</span>
-      <span class="exp-date">2024 – Present</span>
-    </div>
-    <p class="exp-title">AI Engineer</p>
-    <p class="exp-desc">Building production AI applications with LLMs, RAG pipelines, and agentic workflows using LangChain, LangGraph, Claude/OpenAI APIs, and vector databases (Chroma, Qdrant).</p>
-  </div>
-
-  <div class="exp">
-    <div class="exp-header">
-      <span class="exp-company">Alaia Technologies</span>
-      <span class="exp-date">2016 – 2020</span>
-    </div>
-    <p class="exp-title">Back-End Developer</p>
-    <p class="exp-desc">Built high-throughput data pipelines processing 150K+ real estate listings daily. Java, REST APIs, ElasticSearch, SQL. 4 years of production engineering experience.</p>
-  </div>
-
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <span>Python</span><span>TypeScript</span><span>Java</span><span>React/React Native</span>
-    <span>LangChain</span><span>LangGraph</span><span>Claude API</span><span>OpenAI API</span>
-    <span>RAG</span><span>Chroma</span><span>Qdrant</span><span>Vector Search</span>
-    <span>REST APIs</span><span>ElasticSearch</span><span>SQLite</span><span>PostgreSQL</span>
-    <span>AWS</span><span>GCP</span><span>GitHub Actions</span><span>Docker</span>
-    <span>Expo</span><span>Streamlit</span><span>Git</span><span>CI/CD</span>
-  </div>
-
-  <footer>
-    <p>yang.lu@email.com</p>
-  </footer>
+  <footer>Updated portfolio for AI engineering, RAG systems, and agent infrastructure work.</footer>
 </div>
 </body>
 </html>
